@@ -4,8 +4,12 @@
 }
 
 body {
-    margin: 0 0 50px 0;
-    background-color: grey;
+    margin: 0 0 40px 0;
+    background-color: rgba(76, 29, 149, 0.8);
+    background-blend-mode: luminosity;
+    background-image: url("Images/court-img.jpg"); 
+    background-size: 50%;
+   
 }
 
 .container {
@@ -36,14 +40,14 @@ body {
 
 h1 {
     height: 120px;
-    margin-top: 0;
+    margin-top: 100px;
     color: orange;;
     background: black;
     text-align: center;
     font-family: "CursedTimer";
     font-weight: 200;
     font-size: 120px;
-    border: 1px solid black;
+    border: 6px solid white;
     padding: 40px 40px;
     border-radius: 10px;
 }
@@ -65,24 +69,24 @@ h1 {
     font-size: 30px;
     padding: 20px;
     color: orange;
-    background: #4C1D95
+    background: black;
 }
 
 .btn-style:hover {
-    border: 4px solid white;
+    border: 2px solid orange;
     transform: scale(1.2);    
 }
 
 #reset {
     display: flex;
     justify-content: center;
-    margin: 50px 0px;
+    margin: 40px 0px 45px;
 }
 
 #reset-btn {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    border: 0px solid orange;
+    border: 2px solid white;
     color: black;
     background: orange;
     border-radius: 6px;

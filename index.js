@@ -1,50 +1,28 @@
-let homePoints = document.getElementById("home-points")
-let guestPoints = document.getElementById("guest-points")
-let homeTitle = document.getElementById("home-title")
-let guestTitle = document.getElementById("guest-title")
+const homePoints = document.getElementById("home-points")
+const guestPoints = document.getElementById("guest-points")
+const homeTitle = document.getElementById("home-title")
+const guestTitle = document.getElementById("guest-title")
 
 let countHome = 0
 let countGuest = 0
 
 //function to add points to the home team
 
-function add1PointHome() {
-    countHome = countHome + 1
+function score(team, plusPoints) {
+   if (team === "home") {
+    countHome += plusPoints
     homePoints.textContent = countHome
     leading()
-}
-
-function add2PointsHome() {
-    countHome = countHome + 2
-    homePoints.textContent = countHome
-    leading()
-}
-
-function add3PointsHome() {
-    countHome = countHome + 3
-    homePoints.textContent = countHome
-    leading()
-}
-
-//function to add points to the home team
-
-function add1PointGuest() {
-    countGuest = countGuest + 1
+   }
+   else {
+    countGuest += plusPoints
     guestPoints.textContent = countGuest
     leading()
+   }
 }
 
-function add2PointsGuest() {
-    countGuest = countGuest + 2
-    guestPoints.textContent = countGuest
-    leading()
-}
+//0 = 0 + 1, itll return 1. when
 
-function add3PointsGuest() {
-    countGuest = countGuest + 3
-    guestPoints.textContent = countGuest
-    leading()
-}
 
 //Function for RESTART button, to reset both scores back to 0//
 
